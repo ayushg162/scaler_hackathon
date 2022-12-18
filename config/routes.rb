@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       post "/create_group", to: "split#create_group"
       get "/get_groups", to: "split#get_groups"
       post "/split_payment", to: "split#split_payment"
+      post "/get_expenses", to: "split#get_expenses"
       get "/get_transactions", to: "split#get_transactions"
       resources :split, only: [:index, :show, :create, :update, :create_group]
     end
